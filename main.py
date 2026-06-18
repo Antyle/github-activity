@@ -1,7 +1,6 @@
 import sys
 import request # is it this ?
-
-print(sys.version) # print python version 
+version = 1.0
 
 
 while True:
@@ -11,7 +10,8 @@ while True:
         continue
 
 def get_github_info(username):
-    ...
+    
 
 if __name__ == '__main__':
-    ...
+    print(f"Version {version}")
+    print(sys.version) # print python version       
