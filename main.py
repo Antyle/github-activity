@@ -17,7 +17,10 @@ def get_username():
 def get_github_info(username):
     print("[DEBUG] : asking github api...")
     api_request(username)
-    print(info)
+    activities = info
+    print(f"Activities of {username}")
+    print(f"Pushed to {activity['repo']['name']}")
+
 
 def api_request(username):
     api = f"https://api.github.com/users/{username}/events"
