@@ -35,6 +35,8 @@ def display_user_event(data):
             print(f"Followed the repo/organization {activity['repo']['url']}")
         if activity['type'] == 'PushEvent':
             print(f'Pushed to {activity['repo']['url']}')
+        if activity['type'] == 'CreateEvent':
+            print(f"Created {activity['repo']['name']}")
 
 if __name__ == '__main__':
     print(f"Script version {version}")
